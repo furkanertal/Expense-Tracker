@@ -19,7 +19,7 @@ namespace ProjeHazırlık1
 
         private void ButtonDatabase_Click(object sender, EventArgs e)
         {
-            FormDatabase database = new FormDatabase(1);
+            FormDatabase database = new FormDatabase();
             database.Show();
             this.Hide();
         }

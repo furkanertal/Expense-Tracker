@@ -226,6 +226,7 @@
             this.ButtonSil.TextMarginLeft = 0;
             this.ButtonSil.TextPadding = new System.Windows.Forms.Padding(0);
             this.ButtonSil.UseDefaultRadiusAndThickness = true;
+            this.ButtonSil.Click += new System.EventHandler(this.ButtonSil_Click);
             // 
             // ButtonDuzenle
             // 

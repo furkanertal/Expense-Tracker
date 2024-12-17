@@ -39,12 +39,12 @@
             this.tabPageAralık = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.lineChart23 = new MindFusion.Charting.WinForms.LineChart();
-            this.lineChart24 = new MindFusion.Charting.WinForms.LineChart();
             this.bunifuSeparator12 = new Bunifu.UI.WinForms.BunifuSeparator();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.bunifuLabel22 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lineChart24 = new MindFusion.Charting.WinForms.LineChart();
+            this.lineChart23 = new MindFusion.Charting.WinForms.LineChart();
             this.bunifuLabel23 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel22 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -330,25 +330,21 @@
             this.tabPage1.Text = "Ocak";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // lineChart23
+            // bunifuSeparator12
             // 
-            this.lineChart23.LegendTitle = "Legend";
-            this.lineChart23.Location = new System.Drawing.Point(502, 54);
-            this.lineChart23.Name = "lineChart23";
-            this.lineChart23.Padding = new System.Windows.Forms.Padding(5);
-            this.lineChart23.ShowLegend = true;
-            this.lineChart23.Size = new System.Drawing.Size(355, 243);
-            this.lineChart23.SubtitleFontName = null;
-            this.lineChart23.SubtitleFontSize = null;
-            this.lineChart23.SubtitleFontStyle = null;
-            this.lineChart23.TabIndex = 13;
-            this.lineChart23.Text = "lineChart23";
-            this.lineChart23.Theme.UniformSeriesFill = new MindFusion.Drawing.SolidBrush("#FF90EE90");
-            this.lineChart23.Theme.UniformSeriesStroke = new MindFusion.Drawing.SolidBrush("#FF000000");
-            this.lineChart23.Theme.UniformSeriesStrokeThickness = 2D;
-            this.lineChart23.TitleFontName = null;
-            this.lineChart23.TitleFontSize = null;
-            this.lineChart23.TitleFontStyle = null;
+            this.bunifuSeparator12.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator12.BackgroundImage")));
+            this.bunifuSeparator12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator12.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator12.LineColor = System.Drawing.Color.DimGray;
+            this.bunifuSeparator12.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Dot;
+            this.bunifuSeparator12.LineThickness = 3;
+            this.bunifuSeparator12.Location = new System.Drawing.Point(461, 13);
+            this.bunifuSeparator12.Margin = new System.Windows.Forms.Padding(10);
+            this.bunifuSeparator12.Name = "bunifuSeparator12";
+            this.bunifuSeparator12.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Vertical;
+            this.bunifuSeparator12.Size = new System.Drawing.Size(28, 284);
+            this.bunifuSeparator12.TabIndex = 14;
             // 
             // lineChart24
             // 
@@ -370,21 +366,55 @@
             this.lineChart24.TitleFontSize = null;
             this.lineChart24.TitleFontStyle = null;
             // 
-            // bunifuSeparator12
+            // lineChart23
             // 
-            this.bunifuSeparator12.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator12.BackgroundImage")));
-            this.bunifuSeparator12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuSeparator12.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-            this.bunifuSeparator12.LineColor = System.Drawing.Color.DimGray;
-            this.bunifuSeparator12.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Dot;
-            this.bunifuSeparator12.LineThickness = 3;
-            this.bunifuSeparator12.Location = new System.Drawing.Point(461, 13);
-            this.bunifuSeparator12.Margin = new System.Windows.Forms.Padding(10);
-            this.bunifuSeparator12.Name = "bunifuSeparator12";
-            this.bunifuSeparator12.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Vertical;
-            this.bunifuSeparator12.Size = new System.Drawing.Size(28, 284);
-            this.bunifuSeparator12.TabIndex = 14;
+            this.lineChart23.LegendTitle = "Legend";
+            this.lineChart23.Location = new System.Drawing.Point(502, 54);
+            this.lineChart23.Name = "lineChart23";
+            this.lineChart23.Padding = new System.Windows.Forms.Padding(5);
+            this.lineChart23.ShowLegend = true;
+            this.lineChart23.Size = new System.Drawing.Size(355, 243);
+            this.lineChart23.SubtitleFontName = null;
+            this.lineChart23.SubtitleFontSize = null;
+            this.lineChart23.SubtitleFontStyle = null;
+            this.lineChart23.TabIndex = 13;
+            this.lineChart23.Text = "lineChart23";
+            this.lineChart23.Theme.UniformSeriesFill = new MindFusion.Drawing.SolidBrush("#FF90EE90");
+            this.lineChart23.Theme.UniformSeriesStroke = new MindFusion.Drawing.SolidBrush("#FF000000");
+            this.lineChart23.Theme.UniformSeriesStrokeThickness = 2D;
+            this.lineChart23.TitleFontName = null;
+            this.lineChart23.TitleFontSize = null;
+            this.lineChart23.TitleFontStyle = null;
+            // 
+            // bunifuLabel23
+            // 
+            this.bunifuLabel23.AllowParentOverrides = false;
+            this.bunifuLabel23.AutoEllipsis = false;
+            this.bunifuLabel23.CursorType = null;
+            this.bunifuLabel23.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.bunifuLabel23.Location = new System.Drawing.Point(17, 13);
+            this.bunifuLabel23.Name = "bunifuLabel23";
+            this.bunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel23.Size = new System.Drawing.Size(70, 26);
+            this.bunifuLabel23.TabIndex = 10;
+            this.bunifuLabel23.Text = "Gelirler";
+            this.bunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel22
+            // 
+            this.bunifuLabel22.AllowParentOverrides = false;
+            this.bunifuLabel22.AutoEllipsis = false;
+            this.bunifuLabel22.CursorType = null;
+            this.bunifuLabel22.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.bunifuLabel22.Location = new System.Drawing.Point(502, 13);
+            this.bunifuLabel22.Name = "bunifuLabel22";
+            this.bunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel22.Size = new System.Drawing.Size(76, 26);
+            this.bunifuLabel22.TabIndex = 11;
+            this.bunifuLabel22.Text = "Giderler";
+            this.bunifuLabel22.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel22.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // tabControl1
             // 
@@ -407,36 +437,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(958, 345);
             this.tabControl1.TabIndex = 15;
-            // 
-            // bunifuLabel22
-            // 
-            this.bunifuLabel22.AllowParentOverrides = false;
-            this.bunifuLabel22.AutoEllipsis = false;
-            this.bunifuLabel22.CursorType = null;
-            this.bunifuLabel22.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.bunifuLabel22.Location = new System.Drawing.Point(502, 13);
-            this.bunifuLabel22.Name = "bunifuLabel22";
-            this.bunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel22.Size = new System.Drawing.Size(76, 26);
-            this.bunifuLabel22.TabIndex = 11;
-            this.bunifuLabel22.Text = "Giderler";
-            this.bunifuLabel22.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel22.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel23
-            // 
-            this.bunifuLabel23.AllowParentOverrides = false;
-            this.bunifuLabel23.AutoEllipsis = false;
-            this.bunifuLabel23.CursorType = null;
-            this.bunifuLabel23.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.bunifuLabel23.Location = new System.Drawing.Point(17, 13);
-            this.bunifuLabel23.Name = "bunifuLabel23";
-            this.bunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel23.Size = new System.Drawing.Size(70, 26);
-            this.bunifuLabel23.TabIndex = 10;
-            this.bunifuLabel23.Text = "Gelirler";
-            this.bunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // tabPage3
             // 

@@ -33,14 +33,17 @@ namespace ProjeHazırlık1
 
         private void ButtonDuzenle_Click(object sender, EventArgs e)
         {
-            int seciliid = Convert.ToInt32(dataGridView1.CurrentRow.Cells["Id"].Value.ToString());
+            int seciliid = Convert.ToInt32(dataGridView1.CurrentRow.Cells["CatogoryId"].Value.ToString());
             FormKaydet form = new FormKaydet(seciliid);
             form.ShowDialog();
+            form.radioButtonGelir.Text = dataGridView1.CurrentRow.Cells["Type"].Value.ToString();
+            form.comboBoxGelir.Text = dataGridView1.CurrentRow.Cells["Catogory"].Value.ToString();
+            form.radioButtonGider.Text = dataGridView1.CurrentRow.Cells["Type"].Value.ToString();
+            form.comboBoxGider.Text = dataGridView1.CurrentRow.Cells["Catogory"].Value.ToString(); 
+            form.comboBoxAy.Text = dataGridView1.CurrentRow.Cells["Month"].Value.ToString();
+            form.textBoxIslemler.Text = Convert.ToInt32(dataGridView1.CurrentRow.Cells["Amount"].Value).ToString();
 
-            if (radioButtonGelir.Checked = true)
-            {
 
-            }
         }
 
 
@@ -64,6 +67,10 @@ namespace ProjeHazırlık1
         {
             FormKaydet form = new FormKaydet();
             form.ShowDialog();
+            if (form.Kaydedildi)
+            {
+                Listele();
+            }
         }
 
         private void ButtonTamam_Click(object sender, EventArgs e)
@@ -82,6 +89,18 @@ namespace ProjeHazırlık1
         {
 
         }
+
+        private void ButtonSil_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Seçili kayıt silinsin mi?", "Uyarı", MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes) {
+                int seciliid = Convert.ToInt32(dataGridView1.CurrentRow.Cells["CatogoryId"].Value.ToString());
+                string sql = "Delete from Statistics Where CatogoryId='" + seciliid + "' ";
+                if (CRUD.ESD(sql))
+                {
+                    Listele();
+                }
+            }
+        }
     }
     public class Baglan
     {
@@ -99,8 +118,23 @@ namespace ProjeHazırlık1
             return dt;
         }
 
-        
+        public static bool ESD(string sql)
+        {
+            int dogrula = 0;
+            SQLiteCommand command = new SQLiteCommand(sql, Baglan.connection);
+            Baglan.connection.Open();
+            dogrula = command.ExecuteNonQuery();
 
+            Baglan.connection.Close();
+            if (dogrula == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 
 

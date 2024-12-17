@@ -287,6 +287,7 @@
             this.ButtonKaydet.TextMarginLeft = 0;
             this.ButtonKaydet.TextPadding = new System.Windows.Forms.Padding(0);
             this.ButtonKaydet.UseDefaultRadiusAndThickness = true;
+            this.ButtonKaydet.Click += new System.EventHandler(this.ButtonKaydet_Click);
             // 
             // bunifuLabel1
             // 
