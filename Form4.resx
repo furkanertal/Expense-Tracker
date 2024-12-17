@@ -136,15 +136,6 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="ButtonDuzenle.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAnCAYAAAARgpr4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACSSURBVHhe7dKhAYAwAMAwLtnL8B9n4Dc4AAs1EVG13cYx
-        z3GsBf+a5zPfW4DvmY+M+ciYj4z5yJiPjPnImI+M+ciYj4z5yJiPjPnImI+M+ciYj4z5yJiPjPnImI+M
-        +ciYj4z5yJiPjPnImI+M+ciYj4z5yJiPjPnImI+M+ciYj4z5yJiPjPnIbGOf11uAT+3zugHBVbunecNJ
-        IwAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="ButtonGuncelle.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAnCAYAAAARgpr4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
