@@ -51,7 +51,7 @@ This project utilizes **SQLite** for lightweight, local data storage, making it 
 ### 2. Main Dashboard (Database Manager)
 *The central hub where users can view, filter, and manage their transactions.*
 
-![Dashboard](image4.jpg)
+![Dashboard](image4.png)
 
 ### 3. Adding Data
 *A modal interface to add new Income or Expense records with specific categories and dates.*
