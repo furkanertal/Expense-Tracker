@@ -16,7 +16,7 @@ namespace ProjeHazırlık1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLoading());
+            Application.Run(new FormLogin());
         }
     }
 }

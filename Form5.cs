@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ProjeHazırlık1.FormMain;
 
 namespace ProjeHazırlık1
 {
@@ -23,7 +24,8 @@ namespace ProjeHazırlık1
             }
         }
 
-        private void FormKaydet_Load(object sender, EventArgs e)
+        private void 
+            FormKaydet_Load(object sender, EventArgs e)
         {
 
         }
@@ -49,8 +51,6 @@ namespace ProjeHazırlık1
                     {
                         Kaydedildi = true;
                         MessageBox.Show("Gider ekleme işlemi gerçekleşti.");
-                        this.Close();
-
                     }
                 }
             }
@@ -64,6 +64,11 @@ namespace ProjeHazırlık1
                     this.Close();
                 }
             }
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,6 +16,12 @@ namespace ProjeHazırlık1
         public FormLogin()
         {
             InitializeComponent();
+            if (!checkBoxShowpassword.Checked)
+            {
+                // If checkbox is checked, show the actual password
+                bunifuTextBox2.PasswordChar = '*'; // Mask with asterisks
+
+            }
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
@@ -82,16 +88,25 @@ namespace ProjeHazırlık1
 
         private void checkBoxShowpassword_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxShowpassword.Checked)
+            if (!checkBoxShowpassword.Checked)
             {
                 // If checkbox is checked, show the actual password
-                bunifuTextBox2.PasswordChar = '\0'; // Empty char means no masking
+                bunifuTextBox2.PasswordChar = '*'; // Mask with asterisks
+                                                   
             }
             else
             {
                 // If checkbox is unchecked, mask the password
-                bunifuTextBox2.PasswordChar = '*'; // Mask with asterisks
+                
+                bunifuTextBox2.PasswordChar = '\0';// Empty char means no masking
             }
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            Form2_1 formEkle = new Form2_1();
+            formEkle.Show(); // Show() hem ana formu hem bunu aynı anda kullanmanı sağlar.
+                             // Eğer sadece bu formla ilgilenilsin istiyorsan: formEkle.ShowDialog();
         }
     }
 }
