@@ -67,7 +67,7 @@ This project utilizes **SQLite** for lightweight, local data storage, making it 
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/yourusername/expense-tracker.git](https://github.com/yourusername/expense-tracker.git)
+    git clone [https://github.com/furkanertal/expense-tracker.git](https://github.com/furkanertal/expense-tracker.git)
     ```
 2.  **Open in Visual Studio**
     * Open the `.sln` file using Visual Studio 2019 or later.
